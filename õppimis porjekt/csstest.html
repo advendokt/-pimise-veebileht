@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Küsimuste Kontroll</title>
+    <link rel="stylesheet" href="htmltest.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="webÕpimine.html">Home</a>
+        <a href="webÕpimineHtml.html">HTML</a>
+        <a href="webÕpimineCss.html">CSS</a>
+        <a href="webÕpimineJs.html">JS</a>
+    </div>
+    <div id="quiz-container">
+        <h1>CSS Küsimuste Kontroll</h1>
+        <form id="quiz-form">
+            <div>
+                <label for="question1">Milline CSS-i omadus määrab teksti värvi?</label>
+                <input type="text" id="question1" name="question1">
+            </div>
+            <div>
+                <label for="question2">Kuidas määrata kasti (div) taustavärv CSS-is?</label>
+                <input type="text" id="question2" name="question2">
+            </div>
+            <div>
+                <label for="question3">Milline CSS-i omadus muudab nupu teksti suurust?</label>
+                <input type="text" id="question3" name="question3">
+            </div>
+            <div>
+                <label for="question4">Kuidas määrata ümardatud nurkad kastile CSS-is?</label>
+                <input type="text" id="question4" name="question4">
+            </div>
+            <div>
+                <label for="question5">Milline CSS-i omadus lisab varju elemendile?</label>
+                <input type="text" id="question5" name="question5">
+            </div>
+            <button type="button" onclick="checkAnswers()">Kontrolli Vastuseid</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="css_test.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stiili juhendamine</title>
+    <link rel="stylesheet" href="cssõphtml.css">
+    <style>
+        .styled-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .styled-button:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        
+        .styled-box {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        
+        .styled-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .code-container {
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            overflow: auto;
+            margin: 20px auto;
+            /
+        }
+        
+        .code-line {
+            white-space: pre-wrap;
+            padding: 5px 0;
+            color: yellow;
+        }
+        
+        .keyword {
+            color: yellow;
+        }
+        
+        .code {
+            color: #8ff6ef;
+            font-style: italic;
+        }
+        
+        .string {
+            color: red;
+        }
+        
+        .operator {
+            color: orange;
+        }
+        
+        .function {
+            color: #66d9ef;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="webÕpimine.html">Home</a>
+        <a href="webÕpimineHtml.html">HTML</a>
+        <a href="webÕpimineCss.html">CSS</a>
+        <a href="webÕpimineJs.html">JS</a>
+    </div>
+    <header>
+        <h1>Stiili kasutamine</h1>
+    </header>
+    <main class="content">
+        <section>
+            <h2>Kuidas vormindada Nuppu?</h2>
+            <p>Siin on näide, kuidas luua stiilne nupp CSS-i abil:</p>
+            <button class="styled-button">Klõpsa siia</button>
+
+            <div class="code-container">
+                <div class="code-line"><span class="keyword">.styled-button</span> <span class="">{</span></div>
+                <div class="code-line"> <span class="code">display</span><span class="operator"> inline-block;</span></div>
+                <div class="code-line"> <span class="code">padding</span><span class="string"> 10px 20px;</span></div>
+                <div class="code-line"> <span class="code">font-size:</span><span class="string"> 16px;</span></div>
+                <div class="code-line"> <span class="code">text-decoration</span> <span class="operator">none;</span></div>
+                <div class="code-line"> <span class="code">color:</span><span class="string"> #fff;</span></div>
+                <div class="code-line"> <span class="code">background-color:</span><span class="string"> #007bff;</span></div>
+                <div class="code-line"> <span class="code"> border:</span> <span class="string">2px </span><span class="operator">solid </span><span class="string">#007bff;</span></div>
+                <div class="code-line"> <span class="code">border-radius:</span><span class="string"> 5px;</span></div>
+                <div class="code-line"> <span class="code">cursor:</span><span class="operator"> pointer;</span></div>
+                <div class="code-line">}</div>
+            </div>
+        </section>
+        <section>
+            <h2>Kuidas Vormindada kasti?</h2>
+            <p>Siin on näide, kuidas stiilida kast (div) CSS-i abil:</p>
+            <div class="styled-box">
+                <p>Sisu siin kastis...</p>
+                <div class="code-container">
+                    <div class="code-line"><span class="keyword">.styled-box</span><span class=""> {</span></div>
+                    <div class="code-line"> <span class="code">background-color:</span><span class="string"> #fff;</span></div>
+                    <div class="code-line"> <span class="code">padding</span><span class="string"> 20px;</span></div>
+                    <div class="code-line"> <span class="code">border:</span><span class="string"> 1px </span><span class="operator">solid </span><span class="string"> <div id="ddd"></div>;</span></div>
+                    <div class="code-line"> <span class="code">box-shadow:</span><span class="string"> 0 2px 4px </span><span class="operator"> rgba</span><span class="">(</span><span class="string">0, 0, 0, 0.1</span><span class="">);</span></div>
+                    <div class="code-line"> <span class="code">border-radius:</span><span class="string"> 5px;</span></div>
+                    <div class="code-line">}</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Kuidas Vormindada Jaotist (Section)?</h2>
+            <p>Siin on näide, kuidas stiilida jaotis (section) CSS-i abil:</p>
+            <section class="styled-section">
+                <h3>Pealkiri</h3>
+                <p>Sisu siin jaotises...</p>
+                <div class="code-container">
+                    <div class="code-line"><span class="keyword">.styled-section</span><span class=""> {</span></div>
+                    <div class="code-line"> <span class="code">background-color:</span><span class="string"> #f8f9fa;</span></div>
+                    <div class="code-line"> <span class="code">padding</span><span class="string"> 20px;</span></div>
+                    <div class="code-line"> <span class="code">border:</span><span class="string"> 1px </span><span class="operator">solid </span><span class="string"> <div id="ddd"></div>;</span></div>
+                    <div class="code-line"> <span class="code">box-shadow:</span><span class="string"> 0 2px 4px </span><span class="operator"> rgba</span><span class="">(</span><span class="string">0, 0, 0, 0.1</span><span class="">);</span></div>
+                    <div class="code-line"> <span class="code">border-radius:</span><span class="string"> 5px;</span></div>
+                    <div class="code-line">}</div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <section id="pagination">
+        <p>Lehekülgede navigeerimine:</p>
+        <a href="webÕpimineCss.html">Leht 1</a>
+        <a href="webÕpimineCss2.html">Leht 2</a>
+        <a href="webÕpimineCss3.html">Leht 3</a>
+        <a href="csstest.html" class="button">Test</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Õpi CSS</p>
+    </footer>
+    <div class="code-container">
+        <div class="code-line"><span class="keyword">body</span> <span class="">{</span></div>
+        <div class="code-line"> <span class="code">font-family: </span><span class="string"> Arial, sans-serif;</span></div>
+        <div class="code-line"> <span class="code">background-color: </span><span class="string"> #f8f9fa;</span></div>
+        <div class="code-line"><span class="keyword">}</span></div>
+        <div class="code-line"><span class="keyword">h1</span> <span class="variable">{</span></div>
+        <div class="code-line"> <span class="code">color: </span><span class="string"> #007bff;</span></div>
+        <div class="code-line"><span class="keyword"> }</span></div>
+        <div class="code-line"><span class="keyword">.content</span> <span class="variable">{</span></div>
+        <div class="code-line"> <span class="code">padding: </span><span class="string"> 20px;</span></div>
+        <div class="code-line"> <span class="code">margin: </span><span class="string"> 0 auto;</span></div>
+        <div class="code-line"> <span class="code">max-width:</span><span class="string"> 800px;</span></div>
+        <div class="code-line">}</div>
+    </div>
+</body>
+
+</html>

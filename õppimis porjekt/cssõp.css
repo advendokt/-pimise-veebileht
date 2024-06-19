@@ -1,0 +1,127 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #272822;
+    color: #f8f8f2;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.2) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.2) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.2) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.2) 50%, transparent 50%);
+    background-size: 3px 100%, 3px 100%, 3px 100%, 3px 100%;
+    background-position: 0 0, 10px 0, 20px 0, 30px 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    animation: headerFadeIn 1s ease forwards;
+}
+
+@keyframes headerFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: mainFadeIn 1s ease forwards;
+}
+
+@keyframes mainFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.course {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    animation: courseFadeIn 1s ease forwards;
+}
+
+@keyframes courseFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.course-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.course-link:hover {
+    background-color: #0056b3;
+}
+
+.code-container {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    overflow: auto;
+    color: #0056b3;
+}
+
+.code-line {
+    white-space: pre-wrap;
+}
+
+.keyword {
+    color: #f92672;
+}
+
+.comment {
+    color: #75715e;
+    font-style: italic;
+}
+
+.string {
+    color: #e6db74;
+}
+
+.operator {
+    color: #f8f8f2;
+}
+
+.function {
+    color: #66d9ef;
+}

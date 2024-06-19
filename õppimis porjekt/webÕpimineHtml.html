@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elemendid ja Struktuur</title>
+    <link rel="stylesheet" href="cssõphtml.css">
+    <style>
+        .topnav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        .topnav a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="webÕpimine.html">Home</a>
+        <a href="webÕpimineHtml.html">HTML</a>
+        <a href="webÕpimineCss.html">CSS</a>
+        <a href="webÕpimineJs.html">JS</a>
+    </div>
+
+    <header>
+        <h1>HTML Elemendid ja Struktuur</h1>
+    </header>
+    <main class="content">
+        <section id="elements">
+            <h2>HTML Elemendid</h2>
+            <p>HTML (HyperText Markup Language) kasutab erinevaid elemente veebilehtede struktureerimiseks ja sisu määratlemiseks.</p>
+            <p>Siin on mõned olulised HTML elemendid:</p>
+            <ul>
+                <li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt; - Pealkirjad</li>
+                <li>&lt;p&gt; - Lõigud (paragrahvid)</li>
+                <li>&lt;a&gt; - Lingid (ankurid)</li>
+                <li>&lt;img&gt; - Pildid</li>
+                <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; - Loendid</li>
+                <li>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt; - Tabelid</li>
+            </ul>
+        </section>
+        <section id="structure">
+            <h2>HTML Dokumendi Struktuur</h2>
+            <p>HTML dokumendi struktuur koosneb mitmest olulisest elemendist:</p>
+            <ul>
+                <li>&lt;!DOCTYPE html&gt; - Dokumendi tüübi deklaratsioon</li>
+                <li>&lt;html&gt; - HTML dokumendi juurelement</li>
+                <li>&lt;head&gt; - Metaandmed (nt pealkiri, meta kirjeldused)</li>
+                <li>&lt;title&gt; - Dokumendi pealkiri, mis kuvatakse brauseri vahekaardil</li>
+                <li>&lt;body&gt; - Dokumendi keha, kus asub sisu</li>
+            </ul>
+        </section>
+    </main>
+    <section id="pagination">
+        <p>Lehekülgede navigeerimine:</p>
+        <a href="webÕpimineHtml.html">Leht 1</a>
+        <a href="webÕpimineHtml2.html">Leht 2</a>
+        <a href="webÕpimineHtml3.html">Leht 3</a>
+        <a href="htmltest.html" class="button">Test</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 HTML Õppimine</p>
+    </footer>
+    <div class="code-container">
+        <div class="code-line"><span class="keyword">function</span> <span class="function">calculateArea</span>(<span class="keyword">let</span> <span class="variable">radius</span>) {</div>
+        <div class="code-line"> <span class="comment">// Arvutab ringi pindala</span></div>
+        <div class="code-line"> <span class="keyword">const</span> <span class="variable">area</span> = <span class="operator">Math</span>.<span class="function">PI</span> * <span class="variable">radius</span> * <span class="variable">radius</span>;</div>
+        <div class="code-line"> <span class="keyword">return</span> <span class="variable">area</span>;</div>
+        <div class="code-line">}</div>
+    </div>
+</body>
+
+</html>

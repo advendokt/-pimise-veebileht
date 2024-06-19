@@ -1,0 +1,122 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #272822;
+    color: #f8f8f2;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 50%, transparent 50%), linear-gradient(90deg, rgba(0, 0, 0, 0.2) 50%, transparent 50%), linear-gradient(90deg, rgba(0, 0, 0, 0.2) 50%, transparent 50%), linear-gradient(90deg, rgba(0, 0, 0, 0.2) 50%, transparent 50%);
+    background-size: 3px 100%, 3px 100%, 3px 100%, 3px 100%;
+    background-position: 0 0, 10px 0, 20px 0, 30px 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    color: #333;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+li {
+    color: grey;
+}
+
+#pagination {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+#pagination a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#pagination a:hover {
+    text-decoration: underline;
+}
+
+.code-container {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    overflow: auto;
+    margin: 20px auto;
+}
+
+.code-line {
+    white-space: pre-wrap;
+    padding: 5px 0;
+    color: #f8f8f2;
+}
+
+.keyword {
+    color: #f92672;
+}
+
+.comment {
+    color: #ff0afb;
+    font-style: italic;
+}
+
+.string {
+    color: #e6db74;
+}
+
+.operator {
+    color: #65f26a;
+}
+
+.function {
+    color: #66d9ef;
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

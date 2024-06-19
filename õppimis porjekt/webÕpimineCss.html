@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Põhitõed</title>
+    <link rel="stylesheet" href="cssõphtml.css">
+    <style>
+        .code-container {
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            overflow: auto;
+            margin: 20px auto;
+        }
+        
+        .code-line {
+            white-space: pre-wrap;
+            padding: 5px 0;
+            color: yellow;
+        }
+        
+        .keyword {
+            color: yellow;
+        }
+        
+        .code {
+            color: #8ff6ef;
+            font-style: italic;
+        }
+        
+        .string {
+            color: red;
+        }
+        
+        .operator {
+            color: #f8f8f2;
+        }
+        
+        .function {
+            color: #66d9ef;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="webÕpimine.html">Home</a>
+        <a href="webÕpimineHtml.html">HTML</a>
+        <a href="webÕpimineCss.html">CSS</a>
+        <a href="webÕpimineJs.html">JS</a>
+    </div>
+
+    <header>
+        <h1>Õpi CSS-i Põhitõdesid</h1>
+    </header>
+    <main class="content">
+        <section id="intro">
+            <h2>Mis on CSS?</h2>
+            <p>CSS (Cascading Style Sheets) on stiililehtede keel, mida kasutatakse HTML-i elementide kujundamiseks ja paigutuse kontrollimiseks veebilehel. See võimaldab kohandada teksti, pilte ja muud sisu kujundust.</p>
+        </section>
+        <section id="elements">
+            <h2>CSS-i selektorid</h2>
+            <p>Valijad on CSS-is kasutatavad märgendid, mis määravad, millistele HTML-elementidele stiile rakendada:</p>
+            <ul>
+                <li>Elementi valija (nt `p`, `h1`)</li>
+                <li>Klassi valija (nt `.klassinimi`)</li>
+                <li>ID valija (nt `#idnimi`)</li>
+                <li>Atribuudi valija (nt `[type="text"]`)</li>
+            </ul>
+        </section>
+        <section id="structure">
+            <section id="properties">
+                <h2>Levinud CSS-i omadused</h2>
+                <p>Õpi tundma mõningaid olulisi CSS-i omadusi veebilehtede kujundamiseks:</p>
+                <ul>
+                    <li>Teksti omadused (nt `font-family`, `font-size`)</li>
+                    <li>Värvuse omadused (nt `color`, `background-color`)</li>
+                    <li>Kasti mudel (nt `margin`, `padding`, `border`)</li>
+                    <li>Positsioneerimine (nt `position`, `top`, `left`)</li>
+                    <li>Flexbox ja Grid paigutus</li>
+                    <li>Üleminekud ja animatsioonid</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <section id="pagination">
+        <p>Lehekülgede navigeerimine:</p>
+        <a href="webÕpimineCss.html">Leht 1</a>
+        <a href="webÕpimineCss2.html">Leht 2</a>
+        <a href="webÕpimineCss3.html">Leht 3</a>
+        <a href="csstest.html" class="button">Test</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Css Õppimine</p>
+    </footer>
+    <div class="code-container">
+        <div class="code-line"><span class="keyword">body</span> <span class="">{</span></div>
+        <div class="code-line"> <span class="code">font-family: Arial, sans-serif;</span><span class="string"> Arial, sans-serif;</span></div>
+        <div class="code-line"> <span class="code">background-color: #f8f9fa;</span><span class="string"> #f8f9fa;</span></div>
+        <div class="code-line"><span class="keyword">}</span></div>
+        <div class="code-line"><span class="keyword">h1</span> <span class="variable">{</span></div>
+        <div class="code-line"> <span class="code">color: #007bff;</span><span class="string"> #007bff;</span></div>
+        <div class="code-line"><span class="keyword"> }</span></div>
+        <div class="code-line"><span class="keyword">.content</span> <span class="variable">{</span></div>
+        <div class="code-line"> <span class="code">padding: 20px;</span><span class="string"> 20px;</span></div>
+        <div class="code-line"> <span class="code">margin: 0 </span><span class="string"> 0 auto;</span></div>
+        <div class="code-line"> <span class="code">max-width:</span><span class="string"> 800px;</span></div>
+        <div class="code-line">}</div>
+    </div>
+</body>
+
+</html>

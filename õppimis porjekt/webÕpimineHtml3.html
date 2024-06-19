@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tabelid ja Vormid</title>
+    <link rel="stylesheet" href="cssõphtml.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="webÕpimine.html">Home</a>
+        <a href="webÕpimineHtml.html">HTML</a>
+        <a href="webÕpimineCss.html">CSS</a>
+        <a href="webÕpimineJs.html">JS</a>
+    </div>
+    <header>
+        <h1>HTML Tabelid ja Vormid</h1>
+    </header>
+    <main class="content">
+        <section id="tables">
+            <h2>HTML Tabelid</h2>
+            <p>HTML-i tabelid (&lt;table&gt;) võimaldavad struktureerida andmeid ridade ja veergudena.</p>
+            <p>Näide HTML tabelist:</p>
+            <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Nimi&lt;/td&gt;
+        &lt;td&gt;Vanus&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+        </section>
+        <section id="forms">
+            <h2>HTML Vormid</h2>
+            <p>HTML-i vormid (&lt;form&gt;) võimaldavad kasutajatel sisestada andmeid ja neid serverisse saata.</p>
+            <p>Näide HTML vormist:</p>
+            <pre>
+&lt;form action="/submit_form" method="post"&gt;
+    &lt;label for="name"&gt;Nimi:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;input type="submit" value="Saada"&gt;
+&lt;/form&gt;
+            </pre>
+        </section>
+    </main>
+    <section id="pagination">
+        <p>Lehekülgede navigeerimine:</p>
+        <a href="webÕpimineHtml.html">Leht 1</a>
+        <a href="webÕpimineHtml2.html">Leht 2</a>
+        <a href="webÕpimineHtml3.html">Leht 3</a>
+        <a href="htmltest.html" class="button">Test</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 HTML Õppimine</p>
+    </footer>
+    <div class="code-container">
+        <div class="code-line"><span class="keyword">function</span> <span class="function">calculateArea</span>(<span class="keyword">let</span> <span class="variable">radius</span>) {</div>
+        <div class="code-line"> <span class="comment">// Arvutab ringi pindala</span></div>
+        <div class="code-line"> <span class="keyword">const</span> <span class="variable">area</span> = <span class="operator">Math</span>.<span class="function">PI</span> * <span class="variable">radius</span> * <span class="variable">radius</span>;</div>
+        <div class="code-line"> <span class="keyword">return</span> <span class="variable">area</span>;</div>
+        <div class="code-line">}</div>
+    </div>
+</body>
+
+</html>

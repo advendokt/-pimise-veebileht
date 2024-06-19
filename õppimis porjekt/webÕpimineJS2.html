@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Õpi JavaScripti - Muutujad</title>
+    <link rel="stylesheet" href="cssõphtml.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="webÕpimine.html">Home</a>
+        <a href="webÕpimineHtml.html">HTML</a>
+        <a href="webÕpimineCss.html">CSS</a>
+        <a href="webÕpimineJs.html">JS</a>
+    </div>
+    <header>
+        <h1>JavaScripti Muutujad</h1>
+    </header>
+    <main class="content">
+        <section>
+            <h2>Muutujate mõistmine</h2>
+            <p>JavaScripti muutujad on konteinerid, mida kasutatakse andmeväärtuste salvestamiseks. Need võivad hoida erinevat tüüpi andmeid, sealhulgas numbreid, sõnesid, loogikaväärtusi, objekte ja rohkem.</p>
+            <p>JavaScripti muutujad deklareeritakse kasutades võtmesõnu nagu <code>var</code>, <code>let</code> või <code>const</code>. <code>let</code> ja <code>const</code> võtmesõnad tulid kasutusele ES6-s (ECMAScript 2015), et pakkuda plokisõltuvaid muutujaid.</p>
+        </section>
+        <section>
+            <h2>Näited</h2>
+            <p>Allpool toodud näites on <code>nimi</code> muutuja, mis salvestab sõne väärtuse, <code>vanus</code> on konstant, mis salvestab arvu, ja <code>onOpilane</code> on muutuja, mis salvestab loogikaväärtuse.</p>
+            <div class="code-container">
+                <div class="code-line"><span class="keyword">let </span><span class="code">nimi</span><span class=""> = </span><span class="string"> "Jaanika";</span></div>
+                <div class="code-line">    <span class="color">const</span><span class="code"> vanus</span><span class=""> =</span><span class="string"> 30;</span></div>
+                <div class="code-line">    <span class="function">var</span><span class="code"> nOpilane</span><span class=""> =</span><span class="string"> true;</span></div>
+            </div>
+        </section>
+    </main>
+    <section id="pagination">
+        <p>Lehekülgede navigeerimine:</p>
+        <a href="webÕpimineJS.html">Leht 1</a>
+        <a href="webÕpimineJS2.html">Leht 2</a>
+        <a href="webÕpimineJS3.html">Leht 3</a>
+        <a href="JStest.html" class="button">Test</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 JS Õppimine</p>
+    </footer>
+    <div class="code-container">
+        <div class="code-line"><span class="grey">// Funktsioon tervitussõnumi genereerimiseks</span></div>
+        <div class="code-line"><span class="function">function</span> <span class="color">tervita</span>(nimi) {</div>
+        <div class="code-line">    <span class="function">return</span> <span class="green">"Tere, "</span> + nimi + <span class="green">"!"</span>;</div>
+        <div class="code-line">}</div>
+    
+        <div class="code-line"><span class="grey">// Funktsioon, mis käivitatakse nupu klõpsamisel</span></div>
+        <div class="code-line"><span class="function">function</span> <span class="color">kuvaTervitus</span>() {</div>
+        <div class="code-line">    <span class="function">const</span> nimi = <span class="color">document.getElementById</span>(<span class="green">"nimi"</span>).value;</div>
+        <div class="code-line">    <span class="function">const</span> tervitus = <span class="color">tervita</span>(nimi);</div>
+        <div class="code-line">    <span class="color">document.getElementById</span>(<span class="green">"tervitus"</span>).textContent = tervitus;</div>
+        <div class="code-line">}</div>
+    </div>>
+</body>
+</html>
